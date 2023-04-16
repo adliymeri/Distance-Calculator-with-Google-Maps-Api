@@ -55,8 +55,8 @@
     $mail->Port = 465;
     $mail->SMTPSecure = 'ssl';
     $mail->SMTPAuth = true;
-    $mail->Username = 'commerciale@land-g.com';
-    $mail->Password = 'nnaypgtfzyjhlgen';
+    $mail->Username = '****';
+    $mail->Password = '****';
     
 
     // Set email content for the first email
@@ -138,8 +138,8 @@ $mail->Body = $mailBody;
     $mail2->Port = 465;
     $mail2->SMTPSecure = 'ssl';
     $mail2->SMTPAuth = true;
-    $mail2->Username = 'commerciale@land-g.com';
-    $mail2->Password = 'nnaypgtfzyjhlgen';
+    $mail2->Username = '****';
+    $mail2->Password = '****';
 
     // Set email content for the second email
 
