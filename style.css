@@ -1,0 +1,3362 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+body .main-container-1 {
+  display: flex;
+  width: 100vw;
+  margin: 0 auto;
+  align-items: center;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+body .main-container-1 .main-left {
+  background-color: #FFCE07;
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+}
+body .main-container-1 .main-left .main-title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-size: 25px;
+  background-color: #D40511;
+  border-radius: 4px;
+  padding: 10px 10px;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+body .main-container-1 .main-left img {
+  width: 388px;
+  height: auto;
+  margin: 0 auto;
+}
+body .main-container-1 .input-container {
+  height: 100vh;
+  width: 100vw;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #D40511;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+body .main-container-1 .input-container .card {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  gap: 60px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  display: none;
+  max-height: 850px;
+  overflow-y: auto;
+  margin-top: 0px;
+}
+body .main-container-1 .input-container .card .info-1 {
+  font-size: 18px;
+  margin: 0 auto;
+  line-height: 22px;
+  margin-bottom: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body .main-container-1 .input-container .card h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  color: white;
+  font-size: 45px;
+  font-weight: 600;
+}
+body .main-container-1 .input-container .card .checks {
+  width: 480px;
+}
+body .main-container-1 .input-container .card .checks .full-info {
+  font-size: 14px;
+  line-height: 15px;
+  margin-bottom: 10px;
+}
+body .main-container-1 .input-container .card .checks .less-info {
+  font-size: 14px;
+  line-height: 15px;
+}
+body .main-container-1 .input-container .card .checks .check-1 {
+  display: flex;
+  gap: 6px;
+}
+body .main-container-1 .input-container .card .checks .check-1 input[type=checkbox] {
+  display: none;
+}
+body .main-container-1 .input-container .card .checks .check-1 input[type=checkbox] + label:before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  background-color: white;
+  vertical-align: middle;
+}
+body .main-container-1 .input-container .card .checks .check-1 input[type=checkbox]:checked + label:before {
+  background-color: #FFCE07;
+}
+body .main-container-1 .input-container .card .checks .check-1 .full {
+  color: white;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+body .main-container-1 .input-container .card .checks .check-2 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 15px;
+}
+body .main-container-1 .input-container .card .checks .check-2 input[type=checkbox] {
+  display: none;
+}
+body .main-container-1 .input-container .card .checks .check-2 input[type=checkbox] + label:before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  background-color: white;
+  vertical-align: middle;
+}
+body .main-container-1 .input-container .card .checks .check-2 input[type=checkbox]:checked + label:before {
+  background-color: #FFCE07;
+}
+body .main-container-1 .input-container .card .checks .check-2 .less {
+  color: white;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+body .main-container-1 .input-container .card .checks .check-error-message {
+  color: #FFCE07;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  margin-top: 25px;
+}
+body .main-container-1 .input-container .card .btn-1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+body .main-container-1 .input-container .card .btn-1 button {
+  width: 128px;
+  height: 44px;
+  background-color: #FFCE07;
+  border: none;
+  border-radius: 20px;
+  color: #D30410;
+  font-size: 14px;
+  box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s;
+}
+body .main-container-1 .input-container .card .btn-1 button:hover {
+  background-color: #D30410;
+  color: white;
+  cursor: pointer;
+}
+body .main-container-1 .input-container .card .on-check-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: none;
+}
+body .main-container-1 .input-container .card .on-check-1 select {
+  height: 38px;
+  width: 250px;
+  padding-left: 5px;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  font-size: 18px;
+}
+body .main-container-1 .input-container .card .on-check-1 .load-type {
+  height: 40px;
+}
+body .main-container-1 .input-container .card .on-check-1 .if-balanced {
+  display: flex;
+  gap: 20px;
+}
+body .main-container-1 .input-container .card .on-check-1 .check-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body .main-container-1 .input-container .card .on-check-1 .check-group textarea {
+  width: 500px;
+  height: 100px;
+  outline: none;
+  border: none;
+}
+body .main-container-1 .input-container .card .on-check-1 .check-group label {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+}
+body .main-container-1 .input-container .card .on-check-1 .check-group input {
+  height: 38px;
+  width: 250px;
+  padding-left: 10px;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+body .main-container-1 .input-container .card .check-active {
+  display: flex;
+}
+body .main-container-1 .input-container .card h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  color: white;
+  font-size: 45px;
+  text-align: center;
+  line-height: 55px;
+}
+body .main-container-1 .input-container .card .break {
+  display: none;
+}
+body .main-container-1 .input-container .card .origin-company {
+  padding-left: 5px;
+  padding-right: 6px;
+}
+body .main-container-1 .input-container .card .origin-company::placeholder {
+  font-size: 9px;
+  text-indent: 0px;
+}
+body .main-container-1 .input-container .card .destination-company {
+  padding-left: 5px;
+  padding-right: 6px;
+}
+body .main-container-1 .input-container .card .destination-company::placeholder {
+  font-size: 8.8px;
+  text-indent: 0px;
+}
+body .main-container-1 .input-container .card .origin-destination-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+body .main-container-1 .input-container .card #map_container {
+  width: 567px;
+  height: 300px;
+  background-color: #CF0A0A;
+  margin: 0 auto;
+  margin-top: 30px;
+  outline: solid 2px #FFCE07;
+  outline-offset: 3px;
+  border-radius: 1px;
+}
+body .main-container-1 .input-container .card .info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+}
+body .main-container-1 .input-container .card .info label.price {
+  display: none;
+}
+body .main-container-1 .input-container .card .info #distance {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #FBFBFB;
+  font-size: 20px;
+  font-weight: 800px;
+  border: none;
+  cursor: auto;
+  background-color: #D40511;
+  padding-left: 0px;
+  text-align: center;
+  width: 301px;
+}
+body .main-container-1 .input-container .card .info #price {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #FBFBFB;
+  font-size: 20px;
+  font-weight: 600px;
+  border: none;
+  cursor: auto;
+  background-color: #D40511;
+  padding-left: 0px;
+  display: none;
+}
+body .main-container-1 .input-container .card .last-container {
+  display: flex;
+  flex-direction: column;
+}
+body .main-container-1 .input-container .card .last-container .first-form-group {
+  display: flex;
+  gap: 20px;
+}
+body .main-container-1 .input-container .card .last-container .second-form-group {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+body .main-container-1 .input-container .card .last-container .success {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  color: #FBFBFB;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+}
+body .main-container-1 .input-container .active {
+  display: block;
+}
+body .main-container-1 .input-container p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+body .main-container-1 .input-container h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  color: white;
+  font-size: 45px;
+}
+body .main-container-1 .input-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body .main-container-1 .input-container .form-group .add {
+  display: flex;
+  gap: 10px;
+}
+body .main-container-1 .input-container .form-group .add .style-button {
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  height: 20px;
+  width: 20px;
+  margin: auto 0;
+  background-color: #FFCE07;
+  color: #D40511;
+  box-shadow: 5px 3px 3px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  padding-top: 50;
+  padding-left: 50;
+  cursor: pointer;
+}
+body .main-container-1 .input-container .form-group .add .button-active {
+  transform: scale(90%);
+}
+body .main-container-1 .input-container .form-group label {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+body .main-container-1 .input-container .form-group .label-second {
+  font-size: 14.8px;
+}
+body .main-container-1 .input-container .form-group input {
+  height: 38px;
+  width: 250px;
+  padding-left: 10px;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+body .main-container-1 .input-container .form-buttons {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  margin-top: 30px;
+}
+body .main-container-1 .input-container .form-buttons button {
+  width: 128px;
+  height: 44px;
+  background-color: #FFCE07;
+  border: none;
+  border-radius: 20px;
+  color: #D30410;
+  font-size: 14px;
+  box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s;
+}
+body .main-container-1 .input-container .form-buttons button:hover {
+  background-color: #D30410;
+  color: white;
+  cursor: pointer;
+}
+body .main-container-1 ::-webkit-scrollbar {
+  width: 15px;
+  border-radius: 5px;
+}
+body .main-container-1 ::-webkit-scrollbar-track {
+  background: #D40511;
+}
+body .main-container-1 ::-webkit-scrollbar-thumb {
+  background: #D40511;
+}
+body .main-container-1 ::-webkit-scrollbar-thumb:hover {
+  background: #D40511;
+}
+
+@media (max-width: 1600px) and (min-width: 1279px) {
+  .main-container-1 {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    /* width */
+    /* Track */
+    /* Handle */
+    /* Handle on hover */
+  }
+  .main-container-1 .main-left {
+    background-color: #FFCE07;
+    height: 100vh;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-container-1 .main-left .main-title {
+    font-size: 20px !important;
+  }
+  .main-container-1 .main-left img {
+    max-width: 250px;
+    height: auto;
+    margin: 0 auto;
+  }
+  .main-container-1 .input-container {
+    height: 100vh;
+    width: 100vw;
+    padding-left: 30px;
+    background-color: #D40511;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .main-container-1 .input-container .card {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    gap: 60px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    display: none;
+    max-height: 650px;
+    overflow-y: auto;
+    padding-bottom: 20px;
+  }
+  .main-container-1 .input-container .card .card.number-1 {
+    margin-top: 0px !important;
+  }
+  .main-container-1 .input-container .card h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: white;
+    font-size: 45px;
+  }
+  .main-container-1 .input-container .card .checks {
+    width: 480px;
+  }
+  .main-container-1 .input-container .card .checks .check-1 {
+    display: flex;
+    gap: 6px;
+  }
+  .main-container-1 .input-container .card .checks .check-1 input[type=checkbox] {
+    display: none;
+  }
+  .main-container-1 .input-container .card .checks .check-1 input[type=checkbox] + label:before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    background-color: white;
+    vertical-align: middle;
+  }
+  .main-container-1 .input-container .card .checks .check-1 input[type=checkbox]:checked + label:before {
+    background-color: #FFCE07;
+  }
+  .main-container-1 .input-container .card .checks .check-1 .full {
+    color: white;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  .main-container-1 .input-container .card .checks .check-2 {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 15px;
+  }
+  .main-container-1 .input-container .card .checks .check-2 input[type=checkbox] {
+    display: none;
+  }
+  .main-container-1 .input-container .card .checks .check-2 input[type=checkbox] + label:before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    background-color: white;
+    vertical-align: middle;
+  }
+  .main-container-1 .input-container .card .checks .check-2 input[type=checkbox]:checked + label:before {
+    background-color: #FFCE07;
+  }
+  .main-container-1 .input-container .card .checks .check-2 .less {
+    color: white;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  .main-container-1 .input-container .card .checks .check-error-message {
+    color: #FFCE07;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    margin-top: 25px;
+  }
+  .main-container-1 .input-container .card .btn-1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .main-container-1 .input-container .card .btn-1 button {
+    width: 128px;
+    height: 44px;
+    background-color: #FFCE07;
+    border: none;
+    border-radius: 20px;
+    color: #D30410;
+    font-size: 14px;
+    box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s;
+  }
+  .main-container-1 .input-container .card .btn-1 button:hover {
+    background-color: #D30410;
+    color: white;
+    cursor: pointer;
+  }
+  .main-container-1 .input-container .card .on-check-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: none;
+    width: 785px;
+  }
+  .main-container-1 .input-container .card .on-check-1 select {
+    height: 38px;
+    width: 250px;
+    padding-left: 5px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    font-size: 18px;
+  }
+  .main-container-1 .input-container .card .on-check-1 .load-type {
+    height: 38px;
+    width: 232px;
+  }
+  .main-container-1 .input-container .card .on-check-1 .if-balanced {
+    display: flex;
+    gap: 20px;
+  }
+  .main-container-1 .input-container .card .on-check-1 .check-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 220px;
+  }
+  .main-container-1 .input-container .card .on-check-1 .check-group label {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    width: 250px;
+  }
+  .main-container-1 .input-container .card .on-check-1 .check-group input {
+    height: 38px;
+    max-width: 220px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+  }
+  .main-container-1 .input-container .card .check-active {
+    display: flex;
+  }
+  .main-container-1 .input-container .card h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: white;
+    font-size: 45px;
+    text-align: center;
+  }
+  .main-container-1 .input-container .card .origin-destination-inputs {
+    display: flex;
+    gap: 50px;
+  }
+  .main-container-1 .input-container .card #map_container {
+    max-width: 567px;
+    max-height: 200px;
+    background-color: #CF0A0A;
+    margin: 0 auto;
+    margin-top: 30px;
+    outline: solid 1px white;
+    outline-offset: 3px;
+  }
+  .main-container-1 .input-container .card .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    max-width: 650px;
+  }
+  .main-container-1 .input-container .card .info label {
+    width: 120px;
+  }
+  .main-container-1 .input-container .card .info label.price {
+    display: none;
+  }
+  .main-container-1 .input-container .card .info #distance {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FBFBFB;
+    font-size: 20px;
+    font-weight: 800px;
+    border: none;
+    cursor: auto;
+    background-color: #D40511;
+    text-align: center;
+    width: 320px;
+  }
+  .main-container-1 .input-container .card .info #price {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FBFBFB;
+    font-size: 20px;
+    font-weight: 600px;
+    border: none;
+    cursor: auto;
+    background-color: #D40511;
+    padding-left: 0px;
+    width: 180px;
+    display: none;
+  }
+  .main-container-1 .input-container .card .last-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-container-1 .input-container .card .last-container .first-form-group {
+    display: flex;
+    gap: 20px;
+  }
+  .main-container-1 .input-container .card .last-container .second-form-group {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  .main-container-1 .input-container .card.number-3 {
+    max-width: 800px;
+  }
+  .main-container-1 .input-container .card.number-3 .last-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-container-1 .input-container .card.number-3 .last-container .first-form-group {
+    display: flex;
+    gap: 20px;
+  }
+  .main-container-1 .input-container .card.number-3 .last-container .first-form-group .form-group {
+    width: 280px;
+  }
+  .main-container-1 .input-container .card.number-3 .last-container .first-form-group .form-group input {
+    width: 230px;
+  }
+  .main-container-1 .input-container .card.number-3 .last-container .second-form-group {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  .main-container-1 .input-container .card.number-3 .last-container .second-form-group .form-group {
+    width: 280px;
+  }
+  .main-container-1 .input-container .card.number-3 .last-container .second-form-group .form-group label {
+    font-size: 18px;
+  }
+  .main-container-1 .input-container .card.number-3 .last-container .second-form-group .form-group input {
+    width: 230px;
+  }
+  .main-container-1 .input-container #card {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .main-container-1 .input-container #card h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  .main-container-1 .input-container #card .origin-destination-inputs {
+    width: 550px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .main-container-1 .input-container #card .origin-destination-inputs .form-group {
+    width: 350px;
+  }
+  .main-container-1 .input-container #card .origin-destination-inputs .form-group input {
+    width: 250px;
+  }
+  .main-container-1 .input-container #card .origin-destination-inputs .form-group label.origin {
+    max-width: 194px;
+  }
+  .main-container-1 .input-container .active {
+    display: block;
+  }
+  .main-container-1 .input-container h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: white;
+    font-size: 45px;
+  }
+  .main-container-1 .input-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+  }
+  .main-container-1 .input-container .form-group .add {
+    display: flex;
+    gap: 10px;
+  }
+  .main-container-1 .input-container .form-group .add label {
+    max-width: 150px;
+  }
+  .main-container-1 .input-container .form-group .add .style-button {
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    height: 20px;
+    width: 20px;
+    margin: auto 0;
+    background-color: #FFCE07;
+    color: #D40511;
+    box-shadow: 5px 3px 3px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 50;
+    padding-left: 50;
+    cursor: pointer;
+  }
+  .main-container-1 .input-container .form-group .add .button-active {
+    transform: scale(90%);
+  }
+  .main-container-1 .input-container .form-group label {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    width: 248px;
+  }
+  .main-container-1 .input-container .form-group .label-second {
+    font-size: 14px;
+    width: 262px;
+    padding-top: 0;
+  }
+  .main-container-1 .input-container .form-group input {
+    height: 38px;
+    width: 200px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+  }
+  .main-container-1 .input-container #second {
+    width: 310px;
+  }
+  .main-container-1 .input-container #second label.distance {
+    width: 320px;
+    font-size: 20px;
+  }
+  .main-container-1 .input-container .form-buttons {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .main-container-1 .input-container .form-buttons button {
+    width: 128px;
+    height: 44px;
+    background-color: #FFCE07;
+    border: none;
+    border-radius: 20px;
+    color: #D30410;
+    font-size: 14px;
+    box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s;
+  }
+  .main-container-1 .input-container .form-buttons button:hover {
+    background-color: #D30410;
+    color: white;
+    cursor: pointer;
+  }
+  .main-container-1 .input-container #form-buttons-2 {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 550px;
+  }
+  .main-container-1 ::-webkit-scrollbar {
+    width: 15px;
+    border-radius: 5px;
+  }
+  .main-container-1 ::-webkit-scrollbar-track {
+    background: #D40511;
+  }
+  .main-container-1 ::-webkit-scrollbar-thumb {
+    background: #D40511;
+  }
+  .main-container-1 ::-webkit-scrollbar-thumb:hover {
+    background: #D40511;
+  }
+}
+@media (max-width: 1280px) and (min-width: 1000px) {
+  .main-container-1 {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    /* width */
+    /* Track */
+    /* Handle */
+    /* Handle on hover */
+  }
+  .main-container-1 .main-left {
+    background-color: #FFCE07;
+    height: 100vh;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-container-1 .main-left .main-title {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 15px !important;
+    background-color: #D40511;
+    border-radius: 4px;
+    padding: 10px 10px;
+    margin-bottom: 50px;
+    width: 235px;
+  }
+  .main-container-1 .main-left img {
+    max-width: 250px;
+    height: auto;
+    margin: 0 auto;
+  }
+  .main-container-1 .input-container {
+    height: 100vh;
+    width: auto;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #D40511;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .main-container-1 .input-container .card {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    gap: 60px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    display: none;
+    max-height: 650px;
+    overflow-y: auto;
+  }
+  .main-container-1 .input-container .card .info-1 {
+    width: 600px;
+    font-size: 12px !important;
+    margin-left: 0 !important;
+    line-height: 15px;
+  }
+  .main-container-1 .input-container .card h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: white;
+    font-size: 45px;
+  }
+  .main-container-1 .input-container .card .checks {
+    width: 480px;
+  }
+  .main-container-1 .input-container .card .checks .check-1 {
+    display: flex;
+    gap: 6px;
+  }
+  .main-container-1 .input-container .card .checks .check-1 input[type=checkbox] {
+    display: none;
+  }
+  .main-container-1 .input-container .card .checks .check-1 input[type=checkbox] + label:before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    background-color: white;
+    vertical-align: middle;
+  }
+  .main-container-1 .input-container .card .checks .check-1 input[type=checkbox]:checked + label:before {
+    background-color: #FFCE07;
+  }
+  .main-container-1 .input-container .card .checks .check-1 .full {
+    color: white;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  .main-container-1 .input-container .card .checks .check-2 {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 15px;
+  }
+  .main-container-1 .input-container .card .checks .check-2 input[type=checkbox] {
+    display: none;
+  }
+  .main-container-1 .input-container .card .checks .check-2 input[type=checkbox] + label:before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    background-color: white;
+    vertical-align: middle;
+  }
+  .main-container-1 .input-container .card .checks .check-2 input[type=checkbox]:checked + label:before {
+    background-color: #FFCE07;
+  }
+  .main-container-1 .input-container .card .checks .check-2 .less {
+    color: white;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  .main-container-1 .input-container .card .checks .check-error-message {
+    color: #FFCE07;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    margin-top: 25px;
+  }
+  .main-container-1 .input-container .card .btn-1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: 600px;
+  }
+  .main-container-1 .input-container .card .btn-1 button {
+    width: 128px;
+    height: 44px;
+    background-color: #FFCE07;
+    border: none;
+    border-radius: 20px;
+    color: #D30410;
+    font-size: 14px;
+    box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s;
+  }
+  .main-container-1 .input-container .card .btn-1 button:hover {
+    background-color: #D30410;
+    color: white;
+    cursor: pointer;
+  }
+  .main-container-1 .input-container .card #onCheck {
+    margin-left: 0;
+  }
+  .main-container-1 .input-container .card .on-check-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: none;
+    width: 800px;
+  }
+  .main-container-1 .input-container .card .on-check-1 select {
+    height: 38px;
+    max-width: 190px;
+    padding-left: 5px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    font-size: 18px;
+  }
+  .main-container-1 .input-container .card .on-check-1 .load-type {
+    width: 190px;
+    height: 38px;
+  }
+  .main-container-1 .input-container .card .on-check-1 .if-balanced {
+    display: flex;
+    gap: 20px;
+    width: 600px;
+  }
+  .main-container-1 .input-container .card .on-check-1 .if-balanced .check-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 190px;
+  }
+  .main-container-1 .input-container .card .on-check-1 .if-balanced .check-group .total-weight {
+    width: 200px;
+    font-size: 16px;
+  }
+  .main-container-1 .input-container .card .on-check-1 .if-balanced .check-group label {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+  }
+  .main-container-1 .input-container .card .on-check-1 .if-balanced .check-group input {
+    height: 38px;
+    width: 178px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+  }
+  .main-container-1 .input-container .card .on-check-1 .if-balanced .check-group #totalQuantity {
+    font-size: 11px;
+  }
+  .main-container-1 .input-container .card .check-active {
+    display: flex;
+  }
+  .main-container-1 .input-container .card h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    width: 550px;
+    padding-top: 20px;
+  }
+  .main-container-1 .input-container .card .origin-destination-inputs {
+    display: flex;
+    gap: 50px;
+    max-width: 700px;
+  }
+  .main-container-1 .input-container .card #map_container {
+    max-width: 486px;
+    max-height: 200px;
+    background-color: #CF0A0A;
+    margin: 0 auto;
+    margin-top: 30px;
+    outline: solid 1px white;
+    outline-offset: 3px;
+  }
+  .main-container-1 .input-container .card .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+    margin: 0 auto;
+  }
+  .main-container-1 .input-container .card .info label {
+    width: 150px;
+  }
+  .main-container-1 .input-container .card .info #distance {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FBFBFB;
+    font-size: 20px;
+    font-weight: 800px;
+    border: none;
+    cursor: auto;
+    background-color: #D40511;
+    padding-left: 0px;
+    margin: 0 auto;
+  }
+  .main-container-1 .input-container .card .info #price {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FBFBFB;
+    font-size: 20px;
+    font-weight: 600px;
+    border: none;
+    cursor: auto;
+    background-color: #D40511;
+    padding-left: 0px;
+    width: 120px;
+  }
+  .main-container-1 .input-container .card.number-3 {
+    max-width: 600px;
+  }
+  .main-container-1 .input-container .card.number-3 .last-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-container-1 .input-container .card.number-3 .last-container .first-form-group {
+    display: flex;
+    gap: 20px;
+  }
+  .main-container-1 .input-container .card.number-3 .last-container .first-form-group .form-group {
+    width: 170px;
+  }
+  .main-container-1 .input-container .card.number-3 .last-container .first-form-group .form-group input {
+    width: 160px;
+  }
+  .main-container-1 .input-container .card.number-3 .last-container .second-form-group {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  .main-container-1 .input-container .card.number-3 .last-container .second-form-group .form-group {
+    width: 170px;
+  }
+  .main-container-1 .input-container .card.number-3 .last-container .second-form-group .form-group label {
+    font-size: 18px;
+  }
+  .main-container-1 .input-container .card.number-3 .last-container .second-form-group .form-group input {
+    width: 160px;
+  }
+  .main-container-1 .input-container .card.number-2 {
+    margin: 0 80px;
+  }
+  .main-container-1 .input-container #card {
+    width: 600px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+  .main-container-1 .input-container #card h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .main-container-1 .input-container #card .origin-destination-inputs {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .main-container-1 .input-container #card .origin-destination-inputs .form-group {
+    width: 220px;
+  }
+  .main-container-1 .input-container #card .origin-destination-inputs .form-group input {
+    width: 210px;
+  }
+  .main-container-1 .input-container #card .origin-destination-inputs .form-group label {
+    width: 182px;
+  }
+  .main-container-1 .input-container #card .origin-destination-inputs .form-group label.label-second {
+    width: 248px;
+    font-size: 13px;
+  }
+  .main-container-1 .input-container .active {
+    display: block;
+  }
+  .main-container-1 .input-container h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: white;
+    font-size: 45px;
+  }
+  .main-container-1 .input-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+  }
+  .main-container-1 .input-container .form-group .add {
+    display: flex;
+    gap: 10px;
+  }
+  .main-container-1 .input-container .form-group .add label {
+    max-width: 182px;
+  }
+  .main-container-1 .input-container .form-group .add .style-button {
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    height: 20px;
+    width: 20px;
+    margin: auto 0;
+    background-color: #FFCE07;
+    color: #D40511;
+    box-shadow: 5px 3px 3px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 50;
+    padding-left: 50;
+    cursor: pointer;
+  }
+  .main-container-1 .input-container .form-group .add .button-active {
+    transform: scale(90%);
+  }
+  .main-container-1 .input-container .form-group label {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    width: 200px;
+  }
+  .main-container-1 .input-container .form-group input {
+    height: 38px;
+    width: 200px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+  }
+  .main-container-1 .input-container #second {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+  }
+  .main-container-1 .input-container #second .distance {
+    width: 280px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .main-container-1 .input-container .form-buttons {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .main-container-1 .input-container .form-buttons button {
+    width: 128px;
+    height: 44px;
+    background-color: #FFCE07;
+    border: none;
+    border-radius: 20px;
+    color: #D30410;
+    font-size: 14px;
+    box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s;
+  }
+  .main-container-1 .input-container .form-buttons button:hover {
+    background-color: #D30410;
+    color: white;
+    cursor: pointer;
+  }
+  .main-container-1 .input-container #form-buttons-2 {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 550px;
+  }
+  .main-container-1 ::-webkit-scrollbar {
+    width: 15px;
+    border-radius: 5px;
+  }
+  .main-container-1 ::-webkit-scrollbar-track {
+    background: #D40511;
+  }
+  .main-container-1 ::-webkit-scrollbar-thumb {
+    background: #D40511;
+  }
+  .main-container-1 ::-webkit-scrollbar-thumb:hover {
+    background: #D40511;
+  }
+}
+@media (max-width: 999px) and (min-width: 750px) {
+  .main-container-1 {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    /* width */
+    /* Track */
+    /* Handle */
+    /* Handle on hover */
+  }
+  .main-container-1 .main-left {
+    background-image: linear-gradient(135deg, #FFCE07 0%, rgba(255, 206, 7, 0.368627451) 75%);
+    height: 100vh;
+    max-width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-container-1 .main-left .main-title {
+    font-size: 13px !important;
+    margin-bottom: 20px !important;
+    width: 210px;
+    text-align: center;
+    font-weight: 600;
+  }
+  .main-container-1 .main-left img {
+    max-width: 180px;
+    height: auto;
+    margin: 0 auto;
+  }
+  .main-container-1 form.input-container {
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #D40511;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .main-container-1 form.input-container .card {
+    display: flex;
+    flex-direction: column;
+    max-width: 506px;
+    gap: 60px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    display: none;
+    max-height: 650px;
+    padding-bottom: 30px;
+    overflow-y: auto;
+  }
+  .main-container-1 form.input-container .card .info-1 {
+    font-size: 12px;
+    line-height: 18px;
+    width: 481px !important;
+  }
+  .main-container-1 form.input-container .card .last-info {
+    font-size: 15px;
+    line-height: 18px;
+    width: 450px;
+  }
+  .main-container-1 form.input-container .card .full-info {
+    width: 400px;
+  }
+  .main-container-1 form.input-container .card .less-info {
+    width: 400px;
+  }
+  .main-container-1 form.input-container .card .info-1 {
+    width: 500px;
+    padding-top: 30px;
+    padding-right: 10px;
+  }
+  .main-container-1 form.input-container .card p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .main-container-1 form.input-container .card #typeOfMerch {
+    max-width: 300px;
+  }
+  .main-container-1 form.input-container .card .text-1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: white;
+    font-size: 28px;
+    padding-left: 10px;
+  }
+  .main-container-1 form.input-container .card .checks {
+    width: 480px;
+    margin: 0 auto !important;
+  }
+  .main-container-1 form.input-container .card .checks .check-1 {
+    display: flex;
+    gap: 6px;
+  }
+  .main-container-1 form.input-container .card .checks .check-1 input[type=checkbox] {
+    display: none;
+  }
+  .main-container-1 form.input-container .card .checks .check-1 input[type=checkbox] + label:before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    background-color: white;
+    vertical-align: middle;
+  }
+  .main-container-1 form.input-container .card .checks .check-1 input[type=checkbox]:checked + label:before {
+    background-color: #FFCE07;
+  }
+  .main-container-1 form.input-container .card .checks .check-1 .full {
+    color: white;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  .main-container-1 form.input-container .card .checks .check-2 {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 15px;
+  }
+  .main-container-1 form.input-container .card .checks .check-2 input[type=checkbox] {
+    display: none;
+  }
+  .main-container-1 form.input-container .card .checks .check-2 input[type=checkbox] + label:before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    background-color: white;
+    vertical-align: middle;
+  }
+  .main-container-1 form.input-container .card .checks .check-2 input[type=checkbox]:checked + label:before {
+    background-color: #FFCE07;
+  }
+  .main-container-1 form.input-container .card .checks .check-2 .less {
+    color: white;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  .main-container-1 form.input-container .card .checks .check-error-message {
+    color: #FFCE07;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    margin-top: 25px;
+  }
+  .main-container-1 form.input-container .card .btn-1 {
+    display: flex;
+    justify-content: center;
+    margin: 0 100px;
+    margin-top: 30px;
+    width: 200px;
+  }
+  .main-container-1 form.input-container .card .btn-1 button {
+    width: 100px;
+    height: 34px;
+    background-color: #FFCE07;
+    border: none;
+    border-radius: 20px;
+    color: #D30410;
+    font-size: 12px;
+    box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s;
+  }
+  .main-container-1 form.input-container .card .btn-1 button:hover {
+    background-color: #D30410;
+    color: white;
+    cursor: pointer;
+  }
+  .main-container-1 form.input-container .card .on-check-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: none;
+    width: 478px;
+  }
+  .main-container-1 form.input-container .card .on-check-1 select {
+    height: 38px;
+    width: 134px;
+    padding-left: 5px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    font-size: 12px;
+  }
+  .main-container-1 form.input-container .card .on-check-1 .load-type {
+    width: 132px;
+    height: 38px;
+    font-size: 12px;
+  }
+  .main-container-1 form.input-container .card .on-check-1 .if-balanced {
+    display: flex;
+    gap: 20px;
+  }
+  .main-container-1 form.input-container .card .on-check-1 .if-balanced .check-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 132px;
+  }
+  .main-container-1 form.input-container .card .on-check-1 .if-balanced .check-group .total-weight {
+    width: 180px;
+  }
+  .main-container-1 form.input-container .card .on-check-1 .if-balanced .check-group label {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+  }
+  .main-container-1 form.input-container .card .on-check-1 .if-balanced .check-group input {
+    height: 38px;
+    width: 125px;
+    padding-left: 5px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    font-size: 8px;
+  }
+  .main-container-1 form.input-container .card .check-active {
+    display: flex;
+  }
+  .main-container-1 form.input-container .card h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: white;
+    text-align: center;
+  }
+  .main-container-1 form.input-container .card .origin-company {
+    padding-left: 5px;
+    padding-right: 6px;
+  }
+  .main-container-1 form.input-container .card .origin-company::placeholder {
+    font-size: 5.6px;
+    text-indent: 0px;
+  }
+  .main-container-1 form.input-container .card .destination-company {
+    padding-left: 5px;
+    padding-right: 6px;
+  }
+  .main-container-1 form.input-container .card .destination-company::placeholder {
+    font-size: 5.6px;
+    text-indent: 0px;
+  }
+  .main-container-1 form.input-container .card .origin-destination-inputs {
+    display: flex;
+    gap: 30px;
+    max-width: 700px;
+  }
+  .main-container-1 form.input-container .card #map_container {
+    max-width: 417px;
+    max-height: 200px;
+    background-color: #CF0A0A;
+    margin: 0 auto;
+    margin-top: 30px;
+    outline: solid 1px white;
+    outline-offset: 3px;
+  }
+  .main-container-1 form.input-container .card .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 20px;
+    margin-top: 30px;
+  }
+  .main-container-1 form.input-container .card .info label {
+    width: 100px;
+    font-size: 18px;
+  }
+  .main-container-1 form.input-container .card .info #distance {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FBFBFB;
+    font-size: 18px;
+    font-weight: 800px;
+    border: none;
+    cursor: auto;
+    background-color: #D40511;
+    padding-left: 0px;
+    width: 280px;
+  }
+  .main-container-1 form.input-container .card .info #price {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FBFBFB;
+    font-size: 18px;
+    font-weight: 800px;
+    border: none;
+    cursor: auto;
+    background-color: #D40511;
+    padding-left: 0px;
+    width: 120px;
+    margin-left: 50px;
+  }
+  .main-container-1 form.input-container .card.number-3 {
+    max-width: 600px;
+    margin-left: 0;
+  }
+  .main-container-1 form.input-container .card.number-3 .last-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-container-1 form.input-container .card.number-3 .last-container .first-form-group {
+    display: flex;
+    gap: 20px;
+  }
+  .main-container-1 form.input-container .card.number-3 .last-container .first-form-group .form-group {
+    width: 150px;
+  }
+  .main-container-1 form.input-container .card.number-3 .last-container .first-form-group .form-group label {
+    font-size: 15px;
+  }
+  .main-container-1 form.input-container .card.number-3 .last-container .first-form-group .form-group input {
+    width: 130px;
+  }
+  .main-container-1 form.input-container .card.number-3 .last-container .second-form-group {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  .main-container-1 form.input-container .card.number-3 .last-container .second-form-group .form-group {
+    width: 150px;
+  }
+  .main-container-1 form.input-container .card.number-3 .last-container .second-form-group .form-group label {
+    font-size: 15px;
+  }
+  .main-container-1 form.input-container .card.number-3 .last-container .second-form-group .form-group input {
+    width: 130px;
+  }
+  .main-container-1 form.input-container #card {
+    margin: 0 auto;
+    width: 520px;
+  }
+  .main-container-1 form.input-container #card h2 {
+    font-size: 28px;
+    margin: 0 30px;
+    margin-bottom: 30px;
+    line-height: 35px;
+    padding-top: 30px;
+  }
+  .main-container-1 form.input-container #card .origin-destination-inputs {
+    width: 485px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .main-container-1 form.input-container #card .origin-destination-inputs .form-group {
+    width: 200px;
+  }
+  .main-container-1 form.input-container #card .origin-destination-inputs .form-group input {
+    width: 183px;
+  }
+  .main-container-1 form.input-container #card .origin-destination-inputs .form-group label {
+    width: 140px;
+    font-size: 15px;
+  }
+  .main-container-1 form.input-container #card .origin-destination-inputs .form-group label.label-second {
+    width: 212px;
+    font-size: 11px;
+  }
+  .main-container-1 form.input-container .active {
+    display: block;
+  }
+  .main-container-1 form.input-container h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: white;
+    font-size: 28px;
+  }
+  .main-container-1 form.input-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+  }
+  .main-container-1 form.input-container .form-group .add {
+    display: flex;
+    gap: 5px;
+    width: 169px;
+  }
+  .main-container-1 form.input-container .form-group .add label {
+    max-width: 140px;
+    line-height: normal;
+  }
+  .main-container-1 form.input-container .form-group .add #remove-button {
+    padding-bottom: 3px;
+  }
+  .main-container-1 form.input-container .form-group .add .style-button {
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    height: 15px;
+    width: 15px;
+    margin: auto 0;
+    background-color: #FFCE07;
+    color: #D40511;
+    box-shadow: 5px 3px 3px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 50;
+    padding-left: 50;
+    cursor: pointer;
+  }
+  .main-container-1 form.input-container .form-group .add .button-active {
+    transform: scale(90%);
+  }
+  .main-container-1 form.input-container .form-group label {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    width: 200px;
+  }
+  .main-container-1 form.input-container .form-group input {
+    height: 38px;
+    width: 200px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+  }
+  .main-container-1 form.input-container #second {
+    width: 280px;
+  }
+  .main-container-1 form.input-container #second .distance {
+    width: 280px;
+    font-size: 18px;
+    text-align: 0;
+  }
+  .main-container-1 form.input-container .form-buttons {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 30px;
+    width: 500px;
+  }
+  .main-container-1 form.input-container .form-buttons button {
+    width: 100px;
+    height: 34px;
+    background-color: #FFCE07;
+    border: none;
+    border-radius: 20px;
+    color: #D30410;
+    font-size: 12px;
+    box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s;
+  }
+  .main-container-1 form.input-container .form-buttons button:hover {
+    background-color: #D30410;
+    color: white;
+    cursor: pointer;
+  }
+  .main-container-1 form.input-container #form-buttons-2 {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 400px;
+  }
+  .main-container-1 ::-webkit-scrollbar {
+    width: 15px;
+    border-radius: 5px;
+  }
+  .main-container-1 ::-webkit-scrollbar-track {
+    background: #D40511;
+  }
+  .main-container-1 ::-webkit-scrollbar-thumb {
+    background: #D40511;
+  }
+  .main-container-1 ::-webkit-scrollbar-thumb:hover {
+    background: #D40511;
+  }
+}
+@media (max-width: 749px) and (min-width: 540px) {
+  html {
+    width: 100vw;
+    height: 100vh !important;
+  }
+  html body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  html body .main-container-1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    margin: 0 auto;
+    /* width */
+    /* Track */
+    /* Handle */
+    /* Handle on hover */
+  }
+  html body .main-container-1 .main-left {
+    background-image: linear-gradient(135deg, #FFCE07 0%, rgba(255, 206, 7, 0.368627451) 75%);
+    background-size: cover;
+    height: 25% !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+  html body .main-container-1 .main-left .title-left {
+    font-size: 20px !important;
+    margin-bottom: 15px !important;
+  }
+  html body .main-container-1 .main-left img {
+    max-width: 180px;
+    height: auto;
+  }
+  html body .main-container-1 form.input-container {
+    width: 100vw;
+    margin: 0 auto;
+    background-color: #D40511;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+  }
+  html body .main-container-1 form.input-container .card {
+    display: flex;
+    flex-direction: column;
+    max-width: 530px;
+    gap: 60px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    overflow-y: auto;
+    margin: 0;
+    padding-bottom: 30px;
+  }
+  html body .main-container-1 form.input-container .card .info-1 {
+    font-size: 12px;
+    line-height: 18px;
+    width: 500px;
+    padding-top: 30px;
+  }
+  html body .main-container-1 form.input-container .card p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  html body .main-container-1 form.input-container .card #typeOfMerch {
+    max-width: 400px;
+  }
+  html body .main-container-1 form.input-container .card .text-1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+  }
+  html body .main-container-1 form.input-container .card .checks {
+    width: 480px;
+    margin: 0 auto;
+  }
+  html body .main-container-1 form.input-container .card .checks .check-1 {
+    display: flex;
+    gap: 6px;
+    width: 400px;
+    margin: 0 auto;
+  }
+  html body .main-container-1 form.input-container .card .checks .check-1 input[type=checkbox] {
+    display: none;
+  }
+  html body .main-container-1 form.input-container .card .checks .check-1 input[type=checkbox] + label:before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    background-color: white;
+    vertical-align: middle;
+  }
+  html body .main-container-1 form.input-container .card .checks .check-1 input[type=checkbox]:checked + label:before {
+    background-color: #FFCE07;
+  }
+  html body .main-container-1 form.input-container .card .checks .check-1 .full {
+    color: white;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  html body .main-container-1 form.input-container .card .checks .check-2 {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+  html body .main-container-1 form.input-container .card .checks .check-2 input[type=checkbox] {
+    display: none;
+  }
+  html body .main-container-1 form.input-container .card .checks .check-2 input[type=checkbox] + label:before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    background-color: white;
+    vertical-align: middle;
+  }
+  html body .main-container-1 form.input-container .card .checks .check-2 input[type=checkbox]:checked + label:before {
+    background-color: #FFCE07;
+  }
+  html body .main-container-1 form.input-container .card .checks .check-2 .less {
+    color: white;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  html body .main-container-1 form.input-container .card .checks .check-error-message {
+    color: #FFCE07;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 400px;
+  }
+  html body .main-container-1 form.input-container .card .btn-1 {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 200px;
+  }
+  html body .main-container-1 form.input-container .card .btn-1 button {
+    width: 120px;
+    height: 45px;
+    background-color: #FFCE07;
+    border: none;
+    border-radius: 20px;
+    color: #D30410;
+    font-size: 12px;
+    box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s;
+  }
+  html body .main-container-1 form.input-container .card .btn-1 button:hover {
+    background-color: #D30410;
+    color: white;
+    cursor: pointer;
+  }
+  html body .main-container-1 form.input-container .card .on-check-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: none;
+    width: 420px;
+  }
+  html body .main-container-1 form.input-container .card .on-check-1 select {
+    height: 38px;
+    width: 134px;
+    padding-left: 5px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    font-size: 12px;
+  }
+  html body .main-container-1 form.input-container .card .on-check-1 .load-type {
+    width: 132px;
+    height: 38px;
+    font-size: 12px;
+  }
+  html body .main-container-1 form.input-container .card .on-check-1 .if-balanced {
+    display: flex;
+    gap: 10px;
+  }
+  html body .main-container-1 form.input-container .card .on-check-1 .if-balanced .check-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 180px;
+  }
+  html body .main-container-1 form.input-container .card .on-check-1 .if-balanced .check-group .total-weight {
+    width: 140px;
+  }
+  html body .main-container-1 form.input-container .card .on-check-1 .if-balanced .check-group #totalQuantity {
+    padding-left: 3px;
+  }
+  html body .main-container-1 form.input-container .card .on-check-1 .if-balanced .check-group #totalQuantity::placeholder {
+    font-size: 7.8px;
+    padding: 0;
+    font-weight: 300;
+  }
+  html body .main-container-1 form.input-container .card .on-check-1 .if-balanced .check-group label {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+  }
+  html body .main-container-1 form.input-container .card .on-check-1 .if-balanced .check-group input {
+    height: 38px;
+    width: 130px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+  }
+  html body .main-container-1 form.input-container .card .check-active {
+    display: flex;
+  }
+  html body .main-container-1 form.input-container .card h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: white;
+    text-align: center;
+  }
+  html body .main-container-1 form.input-container .card .origin-company {
+    padding-left: 5px;
+    padding-right: 6px;
+  }
+  html body .main-container-1 form.input-container .card .origin-company::placeholder {
+    font-size: 5.5px;
+    text-indent: 0px;
+  }
+  html body .main-container-1 form.input-container .card .destination-company {
+    padding-left: 5px;
+    padding-right: 6px;
+  }
+  html body .main-container-1 form.input-container .card .destination-company::placeholder {
+    font-size: 5.3px;
+    text-indent: 0px;
+  }
+  html body .main-container-1 form.input-container .card .origin-destination-inputs {
+    display: flex;
+    gap: 30px;
+    max-width: 700px;
+  }
+  html body .main-container-1 form.input-container .card #map_container {
+    max-width: 455px;
+    max-height: 180px;
+    background-color: #CF0A0A;
+    margin: 0 auto;
+    margin-top: 30px;
+    outline: solid 1px white;
+    outline-offset: 3px;
+  }
+  html body .main-container-1 form.input-container .card .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 20px;
+    margin-top: 20px;
+  }
+  html body .main-container-1 form.input-container .card .info label {
+    width: 100px;
+    font-size: 18px;
+  }
+  html body .main-container-1 form.input-container .card .info #distance {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FBFBFB;
+    font-size: 18px;
+    font-weight: 800px;
+    border: none;
+    cursor: auto;
+    background-color: #D40511;
+    padding-left: 0px;
+    width: 280px;
+  }
+  html body .main-container-1 form.input-container .card .info #price {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FBFBFB;
+    font-size: 18px;
+    font-weight: 800px;
+    border: none;
+    cursor: auto;
+    background-color: #D40511;
+    padding-left: 0px;
+    width: 120px;
+    margin-left: 50px;
+  }
+  html body .main-container-1 form.input-container .card.number-3 {
+    max-width: 500px;
+    margin-left: 0;
+  }
+  html body .main-container-1 form.input-container .card.number-3 .last-container {
+    display: flex;
+    flex-direction: column;
+  }
+  html body .main-container-1 form.input-container .card.number-3 .last-container .first-form-group {
+    display: flex;
+    gap: 10px;
+  }
+  html body .main-container-1 form.input-container .card.number-3 .last-container .first-form-group .form-group {
+    width: 150px;
+  }
+  html body .main-container-1 form.input-container .card.number-3 .last-container .first-form-group .form-group label {
+    font-size: 15px;
+    width: 130px;
+  }
+  html body .main-container-1 form.input-container .card.number-3 .last-container .first-form-group .form-group input {
+    width: 140px;
+  }
+  html body .main-container-1 form.input-container .card.number-3 .last-container .second-form-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+  }
+  html body .main-container-1 form.input-container .card.number-3 .last-container .second-form-group .form-group {
+    width: 150px;
+  }
+  html body .main-container-1 form.input-container .card.number-3 .last-container .second-form-group .form-group label {
+    font-size: 15px;
+    width: 150px;
+  }
+  html body .main-container-1 form.input-container .card.number-3 .last-container .second-form-group .form-group input {
+    width: 140px;
+  }
+  html body .main-container-1 form.input-container #card {
+    max-width: 500px;
+    margin: 0 auto;
+    padding-left: 20px;
+  }
+  html body .main-container-1 form.input-container #card h2 {
+    font-size: 28px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 450px;
+    line-height: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  html body .main-container-1 form.input-container #card .origin-destination-inputs {
+    width: 485px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  html body .main-container-1 form.input-container #card .origin-destination-inputs .form-group {
+    width: 215px;
+  }
+  html body .main-container-1 form.input-container #card .origin-destination-inputs .form-group input {
+    width: 204px;
+  }
+  html body .main-container-1 form.input-container #card .origin-destination-inputs .form-group label {
+    width: 140px;
+    font-size: 15px;
+  }
+  html body .main-container-1 form.input-container #card .origin-destination-inputs .form-group label.label-second {
+    width: 212px;
+    font-size: 12px;
+  }
+  html body .main-container-1 form.input-container .active {
+    display: block;
+  }
+  html body .main-container-1 form.input-container h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: white;
+    font-size: 28px;
+  }
+  html body .main-container-1 form.input-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+  }
+  html body .main-container-1 form.input-container .form-group .add {
+    display: flex;
+    gap: 5px;
+    width: 166px;
+  }
+  html body .main-container-1 form.input-container .form-group .add label {
+    max-width: 140px;
+    line-height: normal;
+  }
+  html body .main-container-1 form.input-container .form-group .add #remove-button {
+    padding-bottom: 3px;
+  }
+  html body .main-container-1 form.input-container .form-group .add .style-button {
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    height: 15px;
+    width: 15px;
+    margin: auto 0;
+    background-color: #FFCE07;
+    color: #D40511;
+    box-shadow: 5px 3px 3px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 50;
+    padding-left: 50;
+    cursor: pointer;
+  }
+  html body .main-container-1 form.input-container .form-group .add .button-active {
+    transform: scale(90%);
+  }
+  html body .main-container-1 form.input-container .form-group label {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    width: 200px;
+  }
+  html body .main-container-1 form.input-container .form-group input {
+    height: 38px;
+    width: 200px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+  }
+  html body .main-container-1 form.input-container #second {
+    width: 280px;
+  }
+  html body .main-container-1 form.input-container #second .distance {
+    width: 280px;
+    font-size: 18px;
+    text-align: 0;
+  }
+  html body .main-container-1 form.input-container .form-buttons {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 30px;
+    width: 500px;
+  }
+  html body .main-container-1 form.input-container .form-buttons button {
+    width: 120px;
+    height: 45px;
+    background-color: #FFCE07;
+    border: none;
+    border-radius: 20px;
+    color: #D30410;
+    font-size: 14px;
+    box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s;
+  }
+  html body .main-container-1 form.input-container .form-buttons button:hover {
+    background-color: #D30410;
+    color: white;
+    cursor: pointer;
+  }
+  html body .main-container-1 form.input-container #form-buttons-2 {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 400px;
+  }
+  html body .main-container-1 ::-webkit-scrollbar {
+    width: 15px;
+    border-radius: 5px;
+  }
+  html body .main-container-1 ::-webkit-scrollbar-track {
+    background: #D40511;
+  }
+  html body .main-container-1 ::-webkit-scrollbar-thumb {
+    background: #D40511;
+  }
+  html body .main-container-1 ::-webkit-scrollbar-thumb:hover {
+    background: #D40511;
+  }
+}
+@media (max-width: 539px) and (min-width: 360px) {
+  html {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  body .main-container-1 {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    margin: 0 auto;
+    /* width */
+    /* Track */
+    /* Handle */
+    /* Handle on hover */
+  }
+  body .main-container-1 .main-left {
+    background-image: linear-gradient(135deg, #FFCE07 0%, rgba(255, 206, 7, 0.368627451) 75%);
+    background-size: cover;
+    height: 20%;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+  }
+  body .main-container-1 .main-left .title-left {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  body .main-container-1 .main-left img {
+    max-width: 180px;
+    height: auto;
+  }
+  body .main-container-1 form.input-container {
+    height: 80%;
+    width: 100vw;
+    margin: 0 auto;
+    background-color: #D40511;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 10px;
+  }
+  body .main-container-1 form.input-container .card {
+    display: flex;
+    flex-direction: column;
+    max-width: 360px;
+    gap: 60px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    overflow-y: scroll;
+    margin: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 14px;
+  }
+  body .main-container-1 form.input-container .card .info-1 {
+    font-size: 12px;
+    line-height: 15px;
+    width: 313px;
+  }
+  body .main-container-1 form.input-container .card .last-info {
+    width: 240px;
+    font-size: 10px;
+    line-height: 15px;
+  }
+  body .main-container-1 form.input-container .card p {
+    font-size: 15px;
+    line-height: 20px;
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  body .main-container-1 form.input-container .card #typeOfMerch {
+    max-width: 320px;
+  }
+  body .main-container-1 form.input-container .card .text-1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    width: 320px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  body .main-container-1 form.input-container .card .checks {
+    width: 345px;
+    margin: 0 auto;
+  }
+  body .main-container-1 form.input-container .card .checks .check-1 {
+    display: flex;
+    gap: 6px;
+    width: 280px;
+    margin: 0 auto;
+  }
+  body .main-container-1 form.input-container .card .checks .check-1 input[type=checkbox] {
+    display: none;
+  }
+  body .main-container-1 form.input-container .card .checks .check-1 input[type=checkbox] + label:before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    background-color: white;
+    vertical-align: middle;
+  }
+  body .main-container-1 form.input-container .card .checks .check-1 input[type=checkbox]:checked + label:before {
+    background-color: #FFCE07;
+  }
+  body .main-container-1 form.input-container .card .checks .check-1 .full {
+    color: white;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  body .main-container-1 form.input-container .card .checks .check-2 {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: 280px;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+  body .main-container-1 form.input-container .card .checks .check-2 input[type=checkbox] {
+    display: none;
+  }
+  body .main-container-1 form.input-container .card .checks .check-2 input[type=checkbox] + label:before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    background-color: white;
+    vertical-align: middle;
+  }
+  body .main-container-1 form.input-container .card .checks .check-2 input[type=checkbox]:checked + label:before {
+    background-color: #FFCE07;
+  }
+  body .main-container-1 form.input-container .card .checks .check-2 .less {
+    color: white;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  body .main-container-1 form.input-container .card .checks .check-error-message {
+    color: #FFCE07;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 280px;
+  }
+  body .main-container-1 form.input-container .card .btn-1 {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 200px;
+  }
+  body .main-container-1 form.input-container .card .btn-1 button {
+    width: 120px;
+    height: 45px;
+    background-color: #FFCE07;
+    border: none;
+    border-radius: 20px;
+    color: #D30410;
+    font-size: 15px;
+    box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s;
+  }
+  body .main-container-1 form.input-container .card .btn-1 button:hover {
+    background-color: #D30410;
+    color: white;
+    cursor: pointer;
+  }
+  body .main-container-1 form.input-container .card .on-check-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: none;
+    width: 320px;
+  }
+  body .main-container-1 form.input-container .card .on-check-1 #MerchType {
+    width: 230px;
+  }
+  body .main-container-1 form.input-container .card .on-check-1 select {
+    height: 38px;
+    width: 80px;
+    padding-left: 5px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    font-size: 15px;
+  }
+  body .main-container-1 form.input-container .card .on-check-1 .load-type {
+    width: 230px;
+    height: 40px;
+    font-size: 12px;
+  }
+  body .main-container-1 form.input-container .card .on-check-1 .if-balanced {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  body .main-container-1 form.input-container .card .on-check-1 .if-balanced .check-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 230px;
+  }
+  body .main-container-1 form.input-container .card .on-check-1 .if-balanced .check-group label.type-of-merch {
+    text-align: center;
+  }
+  body .main-container-1 form.input-container .card .on-check-1 .if-balanced .check-group .total-weight {
+    width: 220px;
+  }
+  body .main-container-1 form.input-container .card .on-check-1 .if-balanced .check-group #totalQuantity {
+    padding-left: 10px;
+    width: 220px;
+  }
+  body .main-container-1 form.input-container .card .on-check-1 .if-balanced .check-group #totalQuantity::placeholder {
+    font-size: 12px;
+    font-weight: 300;
+  }
+  body .main-container-1 form.input-container .card .on-check-1 .if-balanced .check-group label {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    width: 220px;
+  }
+  body .main-container-1 form.input-container .card .on-check-1 .if-balanced .check-group input {
+    height: 38px;
+    width: 220px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+  }
+  body .main-container-1 form.input-container .card .check-active {
+    display: flex;
+  }
+  body .main-container-1 form.input-container .card h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    margin-left: 20px !important;
+    line-height: 30px;
+    padding-bottom: 20px;
+  }
+  body .main-container-1 form.input-container .card .break {
+    display: flex;
+  }
+  body .main-container-1 form.input-container .card .origin-company {
+    padding-left: 5px;
+    padding-right: 6px;
+  }
+  body .main-container-1 form.input-container .card .origin-company::placeholder {
+    font-size: 10.7px;
+    text-indent: 0px;
+  }
+  body .main-container-1 form.input-container .card .destination-company {
+    padding-left: 5px;
+    padding-right: 6px;
+  }
+  body .main-container-1 form.input-container .card .destination-company::placeholder {
+    font-size: 10.5px;
+    text-indent: 0px;
+  }
+  body .main-container-1 form.input-container .card .origin-destination-inputs {
+    display: flex;
+    gap: 50px;
+    max-width: 700px;
+  }
+  body .main-container-1 form.input-container .card #map_container {
+    max-width: 300px;
+    max-height: 180px;
+    background-color: #CF0A0A;
+    margin: 0 auto;
+    margin-top: 30px;
+    outline: solid 1px white;
+    outline-offset: 3px;
+  }
+  body .main-container-1 form.input-container .card .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 20px;
+    margin-top: 20px;
+  }
+  body .main-container-1 form.input-container .card .info label {
+    width: 100px;
+    font-size: 18px;
+  }
+  body .main-container-1 form.input-container .card .info #distance {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FBFBFB;
+    font-size: 18px;
+    font-weight: 800px;
+    border: none;
+    cursor: auto;
+    background-color: #D40511;
+    padding-left: 0px;
+    width: 280px;
+  }
+  body .main-container-1 form.input-container .card .info #price {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FBFBFB;
+    font-size: 18px;
+    font-weight: 800px;
+    border: none;
+    cursor: auto;
+    background-color: #D40511;
+    padding-left: 0px;
+    width: 120px;
+    margin-left: 50px;
+  }
+  body .main-container-1 form.input-container .card.number-3 {
+    max-width: 350px;
+    margin-left: 0;
+  }
+  body .main-container-1 form.input-container .card.number-3 .last-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 270px;
+    margin: 0 auto;
+  }
+  body .main-container-1 form.input-container .card.number-3 .last-container .first-form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  body .main-container-1 form.input-container .card.number-3 .last-container .first-form-group .form-group {
+    width: 230px;
+  }
+  body .main-container-1 form.input-container .card.number-3 .last-container .first-form-group .form-group label {
+    font-size: 15px;
+    width: 230px;
+  }
+  body .main-container-1 form.input-container .card.number-3 .last-container .first-form-group .form-group input {
+    width: 220px;
+  }
+  body .main-container-1 form.input-container .card.number-3 .last-container .second-form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+  }
+  body .main-container-1 form.input-container .card.number-3 .last-container .second-form-group .form-group {
+    width: 230px;
+  }
+  body .main-container-1 form.input-container .card.number-3 .last-container .second-form-group .form-group label {
+    font-size: 15px;
+    width: 230px;
+  }
+  body .main-container-1 form.input-container .card.number-3 .last-container .second-form-group .form-group input {
+    width: 220px;
+  }
+  body .main-container-1 form.input-container #card {
+    width: 350px;
+    margin: 0 auto;
+    padding-left: 12px;
+  }
+  body .main-container-1 form.input-container #card h2 {
+    font-size: 22px;
+    box-sizing: content-box;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-left: 0 !important;
+  }
+  body .main-container-1 form.input-container #card .origin-destination-inputs {
+    width: 300px;
+    margin: 0 auto;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body .main-container-1 form.input-container #card .origin-destination-inputs .form-group {
+    width: 315px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  body .main-container-1 form.input-container #card .origin-destination-inputs .form-group input {
+    width: 289px;
+  }
+  body .main-container-1 form.input-container #card .origin-destination-inputs .form-group label {
+    width: 300px;
+    font-size: 20px;
+  }
+  body .main-container-1 form.input-container #card .origin-destination-inputs .form-group label.label-second {
+    width: 317px;
+    font-size: 17px;
+  }
+  body .main-container-1 form.input-container .active {
+    display: block;
+  }
+  body .main-container-1 form.input-container h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: white;
+    font-size: 22px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    width: 270px;
+    text-align: center;
+  }
+  body .main-container-1 form.input-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+  }
+  body .main-container-1 form.input-container .form-group .add {
+    display: flex;
+    gap: 5px;
+    width: 310px;
+  }
+  body .main-container-1 form.input-container .form-group .add label {
+    max-width: 188px;
+    line-height: normal;
+  }
+  body .main-container-1 form.input-container .form-group .add #remove-button {
+    padding-bottom: 3px;
+  }
+  body .main-container-1 form.input-container .form-group .add .style-button {
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    height: 15px;
+    width: 15px;
+    margin: auto 0;
+    background-color: #FFCE07;
+    color: #D40511;
+    box-shadow: 5px 3px 3px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 50;
+    padding-left: 50;
+    cursor: pointer;
+  }
+  body .main-container-1 form.input-container .form-group .add .button-active {
+    transform: scale(90%);
+  }
+  body .main-container-1 form.input-container .form-group label {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    width: 200px;
+  }
+  body .main-container-1 form.input-container .form-group .label-second {
+    font-size: 14px;
+    padding-top: 0;
+  }
+  body .main-container-1 form.input-container .form-group input {
+    height: 38px;
+    width: 200px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+  }
+  body .main-container-1 form.input-container #second {
+    width: 280px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  body .main-container-1 form.input-container #second .distance {
+    width: 280px;
+    font-size: 18px;
+    text-align: 0;
+  }
+  body .main-container-1 form.input-container .form-buttons {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 270px;
+  }
+  body .main-container-1 form.input-container .form-buttons button {
+    width: 120px;
+    height: 45px;
+    background-color: #FFCE07;
+    border: none;
+    border-radius: 20px;
+    color: #D30410;
+    font-size: 14px;
+    box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s;
+  }
+  body .main-container-1 form.input-container .form-buttons button:hover {
+    background-color: #D30410;
+    color: white;
+    cursor: pointer;
+  }
+  body .main-container-1 form.input-container #form-buttons-2 {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 300px;
+  }
+  body .main-container-1 ::-webkit-scrollbar {
+    width: 15px;
+    border-radius: 5px;
+  }
+  body .main-container-1 ::-webkit-scrollbar-track {
+    background: #D40511;
+  }
+  body .main-container-1 ::-webkit-scrollbar-thumb {
+    background: #D40511;
+  }
+  body .main-container-1 ::-webkit-scrollbar-thumb:hover {
+    background: #D40511;
+  }
+}
+@media (max-width: 359px) and (min-width: 280px) {
+  html {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  body .main-container-1 {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    /* width */
+    /* Track */
+    /* Handle */
+    /* Handle on hover */
+  }
+  body .main-container-1 .main-left {
+    background-color: linear-gradient(135deg, #FFCE07 0%, rgba(255, 206, 7, 0.368627451) 75%);
+    max-height: 20%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  body .main-container-1 .main-left div.main-title {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  body .main-container-1 .main-left img {
+    width: 180px;
+    height: auto;
+  }
+  body .main-container-1 form.input-container {
+    height: 80%;
+    width: 100%;
+    margin: 0;
+    background-color: #D40511;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  body .main-container-1 form.input-container .card {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 60px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  body .main-container-1 form.input-container .card .info-1 {
+    font-size: 10px;
+    line-height: 15px;
+    margin-left: 75px !important;
+    margin-bottom: 30px !important;
+  }
+  body .main-container-1 form.input-container .card .full-info {
+    margin-left: 20px !important;
+  }
+  body .main-container-1 form.input-container .card .less-info {
+    margin-left: 20px !important;
+  }
+  body .main-container-1 form.input-container .card .last-info {
+    margin-left: 20px !important;
+    font-size: 10px;
+    line-height: 15px;
+  }
+  body .main-container-1 form.input-container .card p {
+    font-size: 12px;
+    line-height: 20px;
+    width: 250px;
+    margin: 0 auto !important;
+    padding-top: 20px;
+  }
+  body .main-container-1 form.input-container .card #typeOfMerch {
+    max-width: 220px;
+  }
+  body .main-container-1 form.input-container .card .text-1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    max-width: 270px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  body .main-container-1 form.input-container .card .checks {
+    width: 270px;
+    margin: 0 auto;
+  }
+  body .main-container-1 form.input-container .card .checks .check-1 {
+    display: flex;
+    gap: 6px;
+    width: 230px;
+    margin: 0 auto;
+  }
+  body .main-container-1 form.input-container .card .checks .check-1 input[type=checkbox] {
+    display: none;
+  }
+  body .main-container-1 form.input-container .card .checks .check-1 input[type=checkbox] + label:before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    background-color: white;
+    vertical-align: middle;
+  }
+  body .main-container-1 form.input-container .card .checks .check-1 input[type=checkbox]:checked + label:before {
+    background-color: #FFCE07;
+  }
+  body .main-container-1 form.input-container .card .checks .check-1 .full {
+    color: white;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  body .main-container-1 form.input-container .card .checks .check-2 {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: 230px;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+  body .main-container-1 form.input-container .card .checks .check-2 input[type=checkbox] {
+    display: none;
+  }
+  body .main-container-1 form.input-container .card .checks .check-2 input[type=checkbox] + label:before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    background-color: white;
+    vertical-align: middle;
+  }
+  body .main-container-1 form.input-container .card .checks .check-2 input[type=checkbox]:checked + label:before {
+    background-color: #FFCE07;
+  }
+  body .main-container-1 form.input-container .card .checks .check-2 .less {
+    color: white;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  body .main-container-1 form.input-container .card .checks .check-error-message {
+    color: #FFCE07;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 230px;
+  }
+  body .main-container-1 form.input-container .card .btn-1 {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 150px;
+  }
+  body .main-container-1 form.input-container .card .btn-1 button {
+    width: 120px;
+    height: 45px;
+    background-color: #FFCE07;
+    border: none;
+    border-radius: 20px;
+    color: #D30410;
+    font-size: 15px;
+    box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s;
+  }
+  body .main-container-1 form.input-container .card .btn-1 button:hover {
+    background-color: #D30410;
+    color: white;
+    cursor: pointer;
+  }
+  body .main-container-1 form.input-container .card .on-check-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: none;
+    width: 230px;
+  }
+  body .main-container-1 form.input-container .card .on-check-1 #MerchType {
+    width: 220px;
+  }
+  body .main-container-1 form.input-container .card .on-check-1 select {
+    height: 38px;
+    width: 220px;
+    padding-left: 5px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    font-size: 12px;
+  }
+  body .main-container-1 form.input-container .card .on-check-1 .load-type {
+    width: 230px;
+    height: 40px;
+    font-size: 12px;
+  }
+  body .main-container-1 form.input-container .card .on-check-1 .if-balanced {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .main-container-1 form.input-container .card .on-check-1 .if-balanced .check-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 230px;
+  }
+  body .main-container-1 form.input-container .card .on-check-1 .if-balanced .check-group .total-weight {
+    width: 220px;
+  }
+  body .main-container-1 form.input-container .card .on-check-1 .if-balanced .check-group #PalletQuantity {
+    width: 230px;
+  }
+  body .main-container-1 form.input-container .card .on-check-1 .if-balanced .check-group #totalQuantity {
+    padding-left: 3px;
+    width: 230px;
+  }
+  body .main-container-1 form.input-container .card .on-check-1 .if-balanced .check-group #totalQuantity::placeholder {
+    font-size: 13px;
+    padding: 10px;
+    font-weight: 300;
+  }
+  body .main-container-1 form.input-container .card .on-check-1 .if-balanced .check-group label {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    width: 210px;
+  }
+  body .main-container-1 form.input-container .card .on-check-1 .if-balanced .check-group input {
+    height: 38px;
+    width: 230px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+  }
+  body .main-container-1 form.input-container .card .check-active {
+    display: flex;
+  }
+  body .main-container-1 form.input-container .card h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: white;
+    text-align: center;
+  }
+  body .main-container-1 form.input-container .card .origin-destination-inputs {
+    display: flex;
+    gap: 50px;
+    max-width: 250px;
+  }
+  body .main-container-1 form.input-container .card #map_container {
+    max-width: 250px;
+    max-height: 180px;
+    background-color: #CF0A0A;
+    margin: 0 15px;
+    margin-top: 30px;
+    outline: solid 1px white;
+    outline-offset: 3px;
+  }
+  body .main-container-1 form.input-container .card .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 270px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  body .main-container-1 form.input-container .card .info label {
+    width: 100px;
+    font-size: 18px;
+  }
+  body .main-container-1 form.input-container .card .info #distance {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FBFBFB;
+    font-size: 18px;
+    font-weight: 800px;
+    border: none;
+    cursor: auto;
+    background-color: #D40511;
+    padding-left: 0px;
+    width: 220px;
+  }
+  body .main-container-1 form.input-container .card .info #price {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FBFBFB;
+    font-size: 18px;
+    font-weight: 800px;
+    border: none;
+    cursor: auto;
+    background-color: #D40511;
+    padding-left: 0px;
+    width: 120px;
+    margin-left: 50px;
+  }
+  body .main-container-1 form.input-container .card.number-3 {
+    padding-top: 20px;
+    width: 280px;
+    margin-left: 0;
+    min-height: 100%;
+  }
+  body .main-container-1 form.input-container .card.number-3 .last-container {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    margin: 0 auto;
+  }
+  body .main-container-1 form.input-container .card.number-3 .last-container .first-form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 270px;
+    margin: 0 auto !important;
+  }
+  body .main-container-1 form.input-container .card.number-3 .last-container .first-form-group .form-group {
+    width: 230px;
+  }
+  body .main-container-1 form.input-container .card.number-3 .last-container .first-form-group .form-group label {
+    font-size: 15px;
+    width: 220px;
+  }
+  body .main-container-1 form.input-container .card.number-3 .last-container .first-form-group .form-group input {
+    width: 220px;
+  }
+  body .main-container-1 form.input-container .card.number-3 .last-container .first-form-group .form-group input::placeholder {
+    font-size: 10px;
+  }
+  body .main-container-1 form.input-container .card.number-3 .last-container .second-form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 270px;
+  }
+  body .main-container-1 form.input-container .card.number-3 .last-container .second-form-group .form-group {
+    width: 230px;
+  }
+  body .main-container-1 form.input-container .card.number-3 .last-container .second-form-group .form-group label {
+    font-size: 15px;
+    width: 220px;
+  }
+  body .main-container-1 form.input-container .card.number-3 .last-container .second-form-group .form-group input {
+    width: 220px;
+  }
+  body .main-container-1 form.input-container .card.number-3 .last-container .second-form-group .form-group input::placeholder {
+    font-size: 10px;
+  }
+  body .main-container-1 form.input-container #card {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+  body .main-container-1 form.input-container #card h2 {
+    font-size: 22px;
+    margin-left: 4px;
+    margin-bottom: 10px;
+    width: 270px;
+    line-height: 28px;
+  }
+  body .main-container-1 form.input-container #card .origin-destination-inputs {
+    width: 250px;
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+  }
+  body .main-container-1 form.input-container #card .origin-destination-inputs .form-group {
+    width: 250px;
+    margin-top: 20px;
+  }
+  body .main-container-1 form.input-container #card .origin-destination-inputs .form-group input {
+    width: 240px;
+  }
+  body .main-container-1 form.input-container #card .origin-destination-inputs .form-group input::placeholder {
+    font-size: 10px;
+  }
+  body .main-container-1 form.input-container #card .origin-destination-inputs .form-group label {
+    width: 200px;
+    font-size: 18px;
+  }
+  body .main-container-1 form.input-container #card .origin-destination-inputs .form-group label.label-second {
+    width: 300px;
+    font-size: 14px;
+  }
+  body .main-container-1 form.input-container .active {
+    display: block;
+  }
+  body .main-container-1 form.input-container h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: white;
+    font-size: 22px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    width: 250px;
+    text-align: center;
+  }
+  body .main-container-1 form.input-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+  }
+  body .main-container-1 form.input-container .form-group .add {
+    display: flex;
+    gap: 5px;
+    width: 250px;
+  }
+  body .main-container-1 form.input-container .form-group .add label {
+    max-width: 171px;
+    line-height: normal;
+    height: 24px;
+  }
+  body .main-container-1 form.input-container .form-group .add #remove-button {
+    padding-bottom: 3px;
+  }
+  body .main-container-1 form.input-container .form-group .add .style-button {
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    height: 15px;
+    width: 15px;
+    margin: auto 0;
+    background-color: #FFCE07;
+    color: #D40511;
+    box-shadow: 5px 3px 3px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 50;
+    padding-left: 50;
+    cursor: pointer;
+  }
+  body .main-container-1 form.input-container .form-group .add .button-active {
+    transform: scale(90%);
+  }
+  body .main-container-1 form.input-container .form-group label {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    width: 220px;
+  }
+  body .main-container-1 form.input-container .form-group input {
+    height: 38px;
+    width: 220px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+  }
+  body .main-container-1 form.input-container #second {
+    width: 270px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  body .main-container-1 form.input-container #second .distance {
+    width: 220px;
+    font-size: 14px;
+    text-align: center;
+  }
+  body .main-container-1 form.input-container .form-buttons {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    width: 280px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  body .main-container-1 form.input-container .form-buttons button {
+    width: 100px;
+    height: 45px;
+    background-color: #FFCE07;
+    border: none;
+    border-radius: 20px;
+    color: #D30410;
+    font-size: 14px;
+    box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s;
+  }
+  body .main-container-1 form.input-container .form-buttons button:hover {
+    background-color: #D30410;
+    color: white;
+    cursor: pointer;
+  }
+  body .main-container-1 form.input-container #form-buttons-2 {
+    margin: 0 5px;
+    margin-top: 10px;
+    width: 270px;
+  }
+  body .main-container-1 ::-webkit-scrollbar {
+    width: 15px;
+    border-radius: 5px;
+  }
+  body .main-container-1 ::-webkit-scrollbar-track {
+    background: #D40511;
+  }
+  body .main-container-1 ::-webkit-scrollbar-thumb {
+    background: #D40511;
+  }
+  body .main-container-1 ::-webkit-scrollbar-thumb:hover {
+    background: #D40511;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

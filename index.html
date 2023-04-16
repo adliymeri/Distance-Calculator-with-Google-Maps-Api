@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Land Group</title>
+</head>
+<body>
+   
+    <div class="main-container-1" data-multi-step>
+        <div class="main-left">
+            <div class="main-title title-left">
+                LAND CALCULATOR SYSTEM
+            </div>
+            <img src="./Photos/landglogo.png" alt="logo">
+        </div>
+        <form class="input-container" action="send_form.php" method="post">
+            <div class="card number-1" data-step>
+                <p class="info-1">
+                    Benvenuto e grazie per aver deciso di utilizzare il nostro Land Calculator System.
+                    Prima di cominciare ci teniamo ad informarti che il nostro sistema e’ attualmente
+                    abilitato a calcolare tutte le tratte del Centro e Nord Italia. 
+                    Per quanto riguarda invece le funzioni per computare tratte del Sud Italia (incluso le isole) e versi i Paesi UE sono al momento in via di sviluppo.
+                    Se hai bisogno di spedire in una delle suindicate zone ti invitiamo ad inviarci una mail su <a style="color: #FFCE07; text-decoration: none;"class="email" href="mailto:commerciale@land-g.com">commerciale@land-g.com</a>, descrivendoci le tue esigenze di trasporto. 
+                </p>
+                <h1 class="text-1">Trasporto via Terra</h1>
+                <div class="checks">
+                    <div class="check-1">
+                        <input type="checkbox" name="caricoCompleto" id="fullTruckLoad"> 
+                        <label class="full" for="fullTruckLoad">Carico Completo (Full Truck Load)</label>
+                    </div>
+                    <p class="full-info" id="full-info">
+                        Il trasporto a carico completo, conociuto con l’acronimo FTL (full truck load), consiste in un trasporto di materiale su strada, 
+                        in cui il camion è caricato completamente in tutta la sua portata da un unico committente. 
+                    </p>
+                    <div class="check-2">
+                        <input type="checkbox" name="caricoParziale" id="lessTruckLoad">
+                        <label class="less" for="lessTruckLoad">Carico Parziale (Less Truck Load)</label>
+                    </div>
+                    <p class="less-info" id="less-info">
+                        Il trasporto a carico parziale è una modalità di spedizione in cui la merce viene abbinata ad altri carichi, 
+                        in modo da ottimizzare il trasporto e ridurre i costi della spedizione. 
+                    </p>
+                    <div class="check-error-message" id="checkErrorMessage"></div>
+                </div>
+                <div class="on-check-1" id="onCheck">
+                    <select name="merchType" id="MerchType">
+                        <option value="Merce bancalata">Merce Bancalata</option>
+                        <option value="Merce non bancalata">Merce non Bancalata</option>
+                    </select>
+                    <div class="check-group">
+                        <label class="type-of-merch" for="typeOfMerch">Tipologia di Merce</label>
+                        <textarea name="tipologiaDiMerce" id="typeOfMerch" placeholder="tipologia di Merce" required></textarea>
+                    </div>
+                    <div class="if-balanced" id="ifBalanced">
+                        <div class="check-group">
+                            <label class="pallet-quantity" for="PalletQuantity">Numero di bancali</label>
+                            <input type="number" name="numeroDiBancali" id="PalletQuantity" placeholder="0" required>
+                        </div>
+                        <div class="check-group">
+                            <label class="load-position" for="LoadType">Modalità Carico</label>
+                            <select name="loadType" id="LoadType" class="load-type">
+                                <option value="Carico Laterale">Carico Laterale</option>
+                                <option value="Carico Posteriore">Carico Posteriore</option>
+                                <option value="Carico dall'Alto">Carico dall'Alto</option>
+                            </select>  
+                        </div>
+                        <div class="check-group">
+                            <label class="total-weight" for="totalQuantity">Peso totale della merce</label>
+                            <input type="number" name="pesoTotale" id="totalQuantity" placeholder="Fino ad un massimo di 30.000 kg"   max="300000"   oninput="this.setCustomValidity('')" oninvalid="setCustomValidity('Il valore deve essere minore o uguale a 300000')"  required>
+                        </div>
+                    </div>
+                    <div class="if-balanced" id="dimensions">
+                        <div class="check-group">
+                            <label class="length" for="lengthSize">Lunghezza</label>
+                            <input type="number" name="lunghezza" id="lengthSize" placeholder="cm" required>
+                        </div>
+                        <div class="check-group">
+                            <label class="width" for="widthSize">Larghezza</label>
+                            <input type="number" name="larghezza" id="widthSize" placeholder="cm" required>
+                        </div>
+                        <div class="check-group">
+                            <label class="height" for="heightSize">Altezza</label>
+                            <input type="number" name="altezza" id="heightSize" placeholder="cm" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-1">
+                    <button type="button" data-next>vai avanti</button>
+                </div>
+            </div>
+            <div class="card number-2" id='card'data-step>
+                <h2>Inserisci la località<br class="break"> di carico e la località<br class="break"> di scarico in modo esatto</h2>
+                <div class="origin-destination-inputs">
+                    <div class="form-group">
+                        <label class="origin" for="origin">Località di Carico</label>
+                        <input  autofocus type="text" id="origin" name="luogoCarico" placeholder="inserisci indirizzo" required>
+                        <label class="label-second" for="origin-company">Inserire il nome esatto dell'azienda<br>di carico con la via e la città</label>
+                    </div>
+                    <div class="form-group" id="formGroup">
+                        <div class="add">
+                            <label class="origin" for="destination">Località di Scarico</label>
+                            <button type="button" class="style-button" id="add-button">+</button>
+                        </div>
+                        <input type="text" id="destination" name="luogoScarico" placeholder="inserisci indirizzo" required>
+                        <label class="label-second" for="destination-company">Inserire il nome esatto dell'azienda<br>di scarico con la via e la città</label>
+                    </div>
+                </div>
+                <div id="map_container"></div>
+                <div class="info">
+                    <div class="form-group" id="second"> 
+                        <label class="distance" for="distance">Distanza dellla tua Spedizione</label> 
+                        <input id="distance" name="Distanza" value="Km" readonly>
+                    </div>
+                    <div class="form-group second">
+                        <label class="price" for="price">Prezzo</label> 
+                        <input id="price" name="Prezzo" value="€"readonly>
+                    </div>
+                </div>
+                <div class="form-buttons" id="form-buttons-2">
+                    <button type="button" data-previous>torna indietro</button>
+                    <button type="button" data-next>vai avanti</button>
+                </div>
+            </div>
+            <div class="card number-3" data-step>
+                <p class="last-info">
+                    Stiamo elaborando la tua richiesta.
+                    Manca solo un passo per ottenere la tua Quotazione.
+                    Inserisci i tuoi dati per ricevere sulla mail che indicherai la nostra Offerta!
+                </p>
+                <h3>Inserisci i tuoi dati</h3>
+                <div class="last-container">
+                    <div class="first-form-group">
+                        <div class="form-group">
+                            <label class="name" for="firstName">Nome</label>
+                            <input type="text" name="Nome" id="firstName" placeholder="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="surname" for="lastName">Cognome</label>
+                            <input type="text" name="Cognome" id="lastName" placeholder="cognome" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="company-name" for="companyName">Nome Azienda </label>
+                            <input type="text" name="nomeAzienda" id="companyName" placeholder="nome azienda" required>
+                        </div>
+                    </div>
+                    <div class="second-form-group">
+                        <div class="form-group">
+                            <label class="nipt" for="nipt">Partita Iva </label>
+                            <input type="text" name="partitaIva" id="nipt" placeholder="partita iva" minlength="11" maxlength="11" oninvalid="setCustomValidity('Deve essere lungo 11 caratteri')" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="company-email" for="companyEmail">Email Aziendale</label>
+                            <input type="email" name="emailAziendale" id="companyEmail" placeholder="email aziendale" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="company-phone" for="companyPhone">Telefono Aziendale</label>
+                            <input type="text" name="telefonoAziendale" id="companyPhone" placeholder="telefono aziendale" required>
+                        </div>
+                    </div>
+                    <div class="form-buttons">
+                        <button type="button" data-previous>torna indietro</button>
+                        <button type="submit">invia richiesta</button>
+                    </div>
+                    <div class="success" id="success"></div>
+                </div>
+            </div>
+        </form>
+        
+    </div>
+
+<script type="text/javascript" src="form.js"></script>
+
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCauwMR4LBOGg45d6cGCiKyqKuk2bUP37Q&libraries=places&callback=initAutocomplete">
+</script>
+
+</body>
+</html>
